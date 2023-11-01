@@ -28,7 +28,7 @@ const mockEvents = [
       id: 4,
       title: "Live Concert: The Classics",
       date: "2023-11-22",
-      time: "20:00",
+      time: "21:00",
       location: "Riverfront Amphitheater",
       description: "Experience an evening of classic hits from the 70s and 80s."
     },
