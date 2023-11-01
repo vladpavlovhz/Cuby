@@ -7,8 +7,7 @@
     onMount(() => {
       events = mockEvents;
     });
-  </script>
-  
+</script>
   <aside id="events-sidebar">
     <h2>Upcoming Events</h2>
     <ul id="events-list">
