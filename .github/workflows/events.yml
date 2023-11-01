@@ -1,0 +1,28 @@
+name: Events pipeline
+ 
+on:
+  push:
+    branches:
+      - dev
+ 
+jobs:
+  build:
+    runs-on: ubuntu-latest
+ 
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+ 
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+ 
+      - name: Install Dependencies
+        run: cd events && npm install
+ 
+      - name: Build
+        run: cd events && npm run build
+ 
+      - name: Test
+        run: cd events && npm test
