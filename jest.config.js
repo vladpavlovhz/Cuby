@@ -1,5 +1,5 @@
 module.exports = {
-    preset: '@testing-library/svelte/preset',
+    preset: '@testing-library/svelte',
     setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect'],
     transform: {
       '^.+\\.svelte$': 'svelte-jester',

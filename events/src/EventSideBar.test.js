@@ -1,7 +1,8 @@
-import { render } from '@testing-library/svelte';
-import EventSidebar from './EventSidebar.svelte';
+const myFunction = require('./EventSidebar.svelte');
 
-it('matches snapshot', () => {
-  const { container } = render(EventSidebar);
-  expect(container).toMatchSnapshot();
+test('Function snapshot test', () => {
+  const result = myFunction(); // Call the function you want to test
+
+  // Use the toMatchSnapshot matcher to capture and compare the snapshot
+  expect(result).toMatchSnapshot();
 });
